@@ -13,10 +13,10 @@ namespace Gestión_escolar
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(
-                Primary.BlueGrey800,
-                Primary.BlueGrey900,
-                Primary.BlueGrey500,
-                Accent.LightBlue200,
+                Primary.Orange300,
+                Primary.Orange200,
+                Primary.Orange100,
+                Accent.Green200,
                 TextShade.WHITE
             );
         }
@@ -52,6 +52,37 @@ namespace Gestión_escolar
         }
 
         private void materialButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialTextBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialLabel1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialCard1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void materialButton2_Click_1(object sender, EventArgs e)
+        {
+            FormDocente ventanaDocente = new FormDocente();
+            ventanaDocente.Show();
+        }
+
+        private void materialLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialButton4_Click(object sender, EventArgs e)
         {
 
         }

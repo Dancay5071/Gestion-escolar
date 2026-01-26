@@ -1,0 +1,42 @@
+﻿using MaterialSkin;
+using MaterialSkin.Controls;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace Gestión_escolar
+{
+    public partial class FormDocente : MaterialForm
+    {
+        public FormDocente()
+        {
+            InitializeComponent();
+
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(
+               Primary.Orange300,
+                Primary.Orange200,
+                Primary.Orange100,
+                Accent.Green200,
+                TextShade.WHITE
+            );
+        }
+
+        private void FormDocente_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
+
