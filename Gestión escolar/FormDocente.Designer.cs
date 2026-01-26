@@ -28,20 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDocente));
             materialCard1 = new MaterialSkin.Controls.MaterialCard();
-            materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             materialButton1 = new MaterialSkin.Controls.MaterialButton();
-            materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
-            textBox1 = new TextBox();
             textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
+            materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             materialCard1.SuspendLayout();
             SuspendLayout();
             // 
             // materialCard1
             // 
             materialCard1.BackColor = Color.FromArgb(255, 255, 255);
+            materialCard1.BackgroundImage = (Image)resources.GetObject("materialCard1.BackgroundImage");
             materialCard1.Controls.Add(materialButton1);
             materialCard1.Controls.Add(textBox2);
             materialCard1.Controls.Add(textBox1);
@@ -58,18 +60,6 @@
             materialCard1.Padding = new Padding(14);
             materialCard1.Size = new Size(611, 246);
             materialCard1.TabIndex = 2;
-            // 
-            // materialLabel3
-            // 
-            materialLabel3.AutoSize = true;
-            materialLabel3.Depth = 0;
-            materialLabel3.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
-            materialLabel3.Location = new Point(188, 14);
-            materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            materialLabel3.Name = "materialLabel3";
-            materialLabel3.Size = new Size(229, 19);
-            materialLabel3.TabIndex = 2;
-            materialLabel3.Text = "Ingrese su usuario y contraseña.";
             // 
             // materialButton1
             // 
@@ -89,31 +79,22 @@
             materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             materialButton1.UseAccentColor = false;
             materialButton1.UseVisualStyleBackColor = true;
+            materialButton1.Click += materialButton1_Click;
             // 
-            // materialLabel2
+            // textBox2
             // 
-            materialLabel2.AutoSize = true;
-            materialLabel2.Depth = 0;
-            materialLabel2.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
-            materialLabel2.Location = new Point(167, 117);
-            materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            materialLabel2.Name = "materialLabel2";
-            materialLabel2.Size = new Size(90, 19);
-            materialLabel2.TabIndex = 1;
-            materialLabel2.Text = "Contraseña: ";
-            materialLabel2.Click += materialLabel2_Click;
+            textBox2.Location = new Point(286, 115);
+            textBox2.Name = "textBox2";
+            textBox2.PasswordChar = '*';
+            textBox2.Size = new Size(131, 23);
+            textBox2.TabIndex = 5;
             // 
-            // materialLabel1
+            // textBox1
             // 
-            materialLabel1.AutoSize = true;
-            materialLabel1.Depth = 0;
-            materialLabel1.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
-            materialLabel1.Location = new Point(198, 71);
-            materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            materialLabel1.Name = "materialLabel1";
-            materialLabel1.Size = new Size(59, 19);
-            materialLabel1.TabIndex = 0;
-            materialLabel1.Text = "Usuario:";
+            textBox1.Location = new Point(286, 71);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(131, 23);
+            textBox1.TabIndex = 4;
             // 
             // materialTextBox1
             // 
@@ -132,25 +113,48 @@
             materialTextBox1.Text = "";
             materialTextBox1.TrailingIcon = null;
             // 
-            // textBox1
+            // materialLabel3
             // 
-            textBox1.Location = new Point(286, 71);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(131, 23);
-            textBox1.TabIndex = 4;
+            materialLabel3.AutoSize = true;
+            materialLabel3.Depth = 0;
+            materialLabel3.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
+            materialLabel3.Location = new Point(188, 14);
+            materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            materialLabel3.Name = "materialLabel3";
+            materialLabel3.Size = new Size(229, 19);
+            materialLabel3.TabIndex = 2;
+            materialLabel3.Text = "Ingrese su usuario y contraseña.";
             // 
-            // textBox2
+            // materialLabel1
             // 
-            textBox2.Location = new Point(286, 115);
-            textBox2.Name = "textBox2";
-            textBox2.PasswordChar = '*';
-            textBox2.Size = new Size(131, 23);
-            textBox2.TabIndex = 5;
+            materialLabel1.AutoSize = true;
+            materialLabel1.Depth = 0;
+            materialLabel1.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
+            materialLabel1.Location = new Point(198, 71);
+            materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            materialLabel1.Name = "materialLabel1";
+            materialLabel1.Size = new Size(59, 19);
+            materialLabel1.TabIndex = 0;
+            materialLabel1.Text = "Usuario:";
+            // 
+            // materialLabel2
+            // 
+            materialLabel2.AutoSize = true;
+            materialLabel2.Depth = 0;
+            materialLabel2.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
+            materialLabel2.Location = new Point(167, 117);
+            materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            materialLabel2.Name = "materialLabel2";
+            materialLabel2.Size = new Size(90, 19);
+            materialLabel2.TabIndex = 1;
+            materialLabel2.Text = "Contraseña: ";
+            materialLabel2.Click += materialLabel2_Click;
             // 
             // FormDocente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(800, 450);
             Controls.Add(materialCard1);
             Name = "FormDocente";

@@ -12,12 +12,21 @@ namespace Gestión_escolar
 {
     public partial class FormDocente : MaterialForm
     {
-        public FormDocente()
+        private string rolRecibido;
+       
+        public FormDocente(string rol)
         {
             InitializeComponent();
 
-            var materialSkinManager = MaterialSkinManager.Instance;
+            
+            this.rolRecibido = rol;
+            this.Text = "Acceso - " + rol;
+        
+
+        var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
+   
+
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(
                Primary.Orange300,
@@ -34,6 +43,11 @@ namespace Gestión_escolar
         }
 
         private void materialLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialButton1_Click(object sender, EventArgs e)
         {
 
         }

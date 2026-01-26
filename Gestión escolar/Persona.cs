@@ -10,7 +10,7 @@ namespace Gestión_escolar
         public string Apellido { get; set; }
         public string DNI { get; set; }
         public string Email { get; set; }
-        private string Contraseña { get; set; }
+        public string Contraseña { get; set; }
 
     }
 }

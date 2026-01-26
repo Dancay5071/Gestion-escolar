@@ -1,5 +1,6 @@
-using MaterialSkin.Controls; 
 using MaterialSkin;
+using MaterialSkin.Controls; 
+using Microsoft.VisualBasic.Logging;
 
 namespace Gestión_escolar
 {
@@ -73,8 +74,10 @@ namespace Gestión_escolar
 
         private void materialButton2_Click_1(object sender, EventArgs e)
         {
-            FormDocente ventanaDocente = new FormDocente();
-            ventanaDocente.Show();
+            
+            FormDocente login = new FormDocente("Docente");
+            login.Show();
+        
         }
 
         private void materialLabel2_Click(object sender, EventArgs e)
@@ -84,7 +87,9 @@ namespace Gestión_escolar
 
         private void materialButton4_Click(object sender, EventArgs e)
         {
-
+            FormEstudiante login = new FormEstudiante("Estudiante");
+            login.Show();
+          
         }
     }
 }

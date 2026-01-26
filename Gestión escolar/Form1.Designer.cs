@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Titulo));
             materialCard1 = new MaterialSkin.Controls.MaterialCard();
-            materialButton4 = new MaterialSkin.Controls.MaterialButton();
+            btnEstudiante = new MaterialSkin.Controls.MaterialButton();
             pictureBox1 = new PictureBox();
-            materialButton3 = new MaterialSkin.Controls.MaterialButton();
-            materialButton2 = new MaterialSkin.Controls.MaterialButton();
-            materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            btnAuxiliar = new MaterialSkin.Controls.MaterialButton();
+            btndocente = new MaterialSkin.Controls.MaterialButton();
+            btnDirectivo = new MaterialSkin.Controls.MaterialButton();
             materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             materialCard1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -45,11 +45,11 @@
             materialCard1.BackColor = Color.FromArgb(255, 255, 255);
             materialCard1.BackgroundImage = (Image)resources.GetObject("materialCard1.BackgroundImage");
             materialCard1.BorderStyle = BorderStyle.FixedSingle;
-            materialCard1.Controls.Add(materialButton4);
+            materialCard1.Controls.Add(btnEstudiante);
             materialCard1.Controls.Add(pictureBox1);
-            materialCard1.Controls.Add(materialButton3);
-            materialCard1.Controls.Add(materialButton2);
-            materialCard1.Controls.Add(materialButton1);
+            materialCard1.Controls.Add(btnAuxiliar);
+            materialCard1.Controls.Add(btndocente);
+            materialCard1.Controls.Add(btnDirectivo);
             materialCard1.Controls.Add(materialLabel2);
             materialCard1.Depth = 0;
             materialCard1.ForeColor = Color.FromArgb(222, 0, 0, 0);
@@ -62,26 +62,26 @@
             materialCard1.TabIndex = 0;
             materialCard1.Paint += materialCard1_Paint;
             // 
-            // materialButton4
+            // btnEstudiante
             // 
-            materialButton4.AutoSize = false;
-            materialButton4.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton4.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton4.Depth = 0;
-            materialButton4.HighEmphasis = true;
-            materialButton4.Icon = null;
-            materialButton4.Location = new Point(376, 234);
-            materialButton4.Margin = new Padding(4, 6, 4, 6);
-            materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            materialButton4.Name = "materialButton4";
-            materialButton4.NoAccentTextColor = Color.Empty;
-            materialButton4.Size = new Size(222, 36);
-            materialButton4.TabIndex = 6;
-            materialButton4.Text = "Estudiantes";
-            materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton4.UseAccentColor = false;
-            materialButton4.UseVisualStyleBackColor = true;
-            materialButton4.Click += materialButton4_Click;
+            btnEstudiante.AutoSize = false;
+            btnEstudiante.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnEstudiante.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnEstudiante.Depth = 0;
+            btnEstudiante.HighEmphasis = true;
+            btnEstudiante.Icon = null;
+            btnEstudiante.Location = new Point(376, 234);
+            btnEstudiante.Margin = new Padding(4, 6, 4, 6);
+            btnEstudiante.MouseState = MaterialSkin.MouseState.HOVER;
+            btnEstudiante.Name = "btnEstudiante";
+            btnEstudiante.NoAccentTextColor = Color.Empty;
+            btnEstudiante.Size = new Size(222, 36);
+            btnEstudiante.TabIndex = 6;
+            btnEstudiante.Text = "Estudiantes";
+            btnEstudiante.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnEstudiante.UseAccentColor = false;
+            btnEstudiante.UseVisualStyleBackColor = true;
+            btnEstudiante.Click += materialButton4_Click;
             // 
             // pictureBox1
             // 
@@ -94,65 +94,65 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
-            // materialButton3
+            // btnAuxiliar
             // 
-            materialButton3.AutoSize = false;
-            materialButton3.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton3.Depth = 0;
-            materialButton3.HighEmphasis = true;
-            materialButton3.Icon = null;
-            materialButton3.Location = new Point(73, 234);
-            materialButton3.Margin = new Padding(4, 6, 4, 6);
-            materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            materialButton3.Name = "materialButton3";
-            materialButton3.NoAccentTextColor = Color.Empty;
-            materialButton3.Size = new Size(222, 36);
-            materialButton3.TabIndex = 5;
-            materialButton3.Text = "Auxiliar docente";
-            materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton3.UseAccentColor = false;
-            materialButton3.UseVisualStyleBackColor = true;
+            btnAuxiliar.AutoSize = false;
+            btnAuxiliar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnAuxiliar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnAuxiliar.Depth = 0;
+            btnAuxiliar.HighEmphasis = true;
+            btnAuxiliar.Icon = null;
+            btnAuxiliar.Location = new Point(73, 234);
+            btnAuxiliar.Margin = new Padding(4, 6, 4, 6);
+            btnAuxiliar.MouseState = MaterialSkin.MouseState.HOVER;
+            btnAuxiliar.Name = "btnAuxiliar";
+            btnAuxiliar.NoAccentTextColor = Color.Empty;
+            btnAuxiliar.Size = new Size(222, 36);
+            btnAuxiliar.TabIndex = 5;
+            btnAuxiliar.Text = "Auxiliar docente";
+            btnAuxiliar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnAuxiliar.UseAccentColor = false;
+            btnAuxiliar.UseVisualStyleBackColor = true;
             // 
-            // materialButton2
+            // btndocente
             // 
-            materialButton2.AutoSize = false;
-            materialButton2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton2.Depth = 0;
-            materialButton2.HighEmphasis = true;
-            materialButton2.Icon = null;
-            materialButton2.Location = new Point(376, 125);
-            materialButton2.Margin = new Padding(4, 6, 4, 6);
-            materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            materialButton2.Name = "materialButton2";
-            materialButton2.NoAccentTextColor = Color.Empty;
-            materialButton2.Size = new Size(222, 36);
-            materialButton2.TabIndex = 4;
-            materialButton2.Text = "Docente";
-            materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton2.UseAccentColor = false;
-            materialButton2.UseVisualStyleBackColor = true;
-            materialButton2.Click += materialButton2_Click_1;
+            btndocente.AutoSize = false;
+            btndocente.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btndocente.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btndocente.Depth = 0;
+            btndocente.HighEmphasis = true;
+            btndocente.Icon = null;
+            btndocente.Location = new Point(376, 125);
+            btndocente.Margin = new Padding(4, 6, 4, 6);
+            btndocente.MouseState = MaterialSkin.MouseState.HOVER;
+            btndocente.Name = "btndocente";
+            btndocente.NoAccentTextColor = Color.Empty;
+            btndocente.Size = new Size(222, 36);
+            btndocente.TabIndex = 4;
+            btndocente.Text = "Docente";
+            btndocente.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            btndocente.UseAccentColor = false;
+            btndocente.UseVisualStyleBackColor = true;
+            btndocente.Click += materialButton2_Click_1;
             // 
-            // materialButton1
+            // btnDirectivo
             // 
-            materialButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton1.Depth = 0;
-            materialButton1.HighEmphasis = true;
-            materialButton1.Icon = null;
-            materialButton1.Location = new Point(73, 125);
-            materialButton1.Margin = new Padding(4, 6, 4, 6);
-            materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            materialButton1.Name = "materialButton1";
-            materialButton1.NoAccentTextColor = Color.Empty;
-            materialButton1.Size = new Size(222, 36);
-            materialButton1.TabIndex = 3;
-            materialButton1.Text = "Directivo/Administrativo";
-            materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton1.UseAccentColor = false;
-            materialButton1.UseVisualStyleBackColor = true;
+            btnDirectivo.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnDirectivo.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnDirectivo.Depth = 0;
+            btnDirectivo.HighEmphasis = true;
+            btnDirectivo.Icon = null;
+            btnDirectivo.Location = new Point(73, 125);
+            btnDirectivo.Margin = new Padding(4, 6, 4, 6);
+            btnDirectivo.MouseState = MaterialSkin.MouseState.HOVER;
+            btnDirectivo.Name = "btnDirectivo";
+            btnDirectivo.NoAccentTextColor = Color.Empty;
+            btnDirectivo.Size = new Size(222, 36);
+            btnDirectivo.TabIndex = 3;
+            btnDirectivo.Text = "Directivo/Administrativo";
+            btnDirectivo.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnDirectivo.UseAccentColor = false;
+            btnDirectivo.UseVisualStyleBackColor = true;
             // 
             // materialLabel2
             // 
@@ -189,10 +189,10 @@
 
         private MaterialSkin.Controls.MaterialCard materialCard1;
         private PictureBox pictureBox1;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
+        private MaterialSkin.Controls.MaterialButton btnDirectivo;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
-        private MaterialSkin.Controls.MaterialButton materialButton4;
-        private MaterialSkin.Controls.MaterialButton materialButton3;
-        private MaterialSkin.Controls.MaterialButton materialButton2;
+        private MaterialSkin.Controls.MaterialButton btnEstudiante;
+        private MaterialSkin.Controls.MaterialButton btnAuxiliar;
+        private MaterialSkin.Controls.MaterialButton btndocente;
     }
 }
