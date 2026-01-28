@@ -26,27 +26,33 @@ namespace Gestión_escolar
 
         private void btnAuxiliar_Click(object sender, EventArgs e)
         {
+           
             FormAuxiliar login = new FormAuxiliar("Auxiliar");
             login.Show();
+           
         }
 
         private void btnDirectivo_Click(object sender, EventArgs e)
         {
+            
             FormDirectivo login = new FormDirectivo("Directivo");
             login.Show();
+            
         }
 
         private void btndocente_Click(object sender, EventArgs e)
         {
+
             FormDocente login = new FormDocente("Docente");
             login.Show();
-
+            
         }
 
         private void btnEstudiante_Click(object sender, EventArgs e)
         {
             FormEstudiante login = new FormEstudiante("Estudiante");
             login.Show();
+            
         }
     }
 }

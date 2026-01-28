@@ -37,5 +37,25 @@ namespace Gestión_escolar
                 TextShade.WHITE
             );
         }
+        private void FormDirectivo_Load(object sender, EventArgs e)
+        {
+            lblBienvenida.Text = $"Bienvenido/a al area de {this.rolRecibido}";
+
+            if (this.rolRecibido == "Directivo")
+            {
+                btnIngresar.UseAccentColor = false;
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
+

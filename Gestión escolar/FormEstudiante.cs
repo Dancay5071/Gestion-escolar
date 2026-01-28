@@ -13,7 +13,7 @@ namespace Gestión_escolar
 {
     public partial class FormEstudiante : MaterialForm
     {
-        
+
         private string rolRecibido;
 
         public FormEstudiante(string rol)
@@ -44,14 +44,14 @@ namespace Gestión_escolar
 
         }
 
-        private void materialLabel2_Click(object sender, EventArgs e)
+        private void btnIngresar_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
 
-        private void materialButton1_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
     }
 }

@@ -39,7 +39,12 @@ namespace Gestión_escolar
 
         private void FormDocente_Load(object sender, EventArgs e)
         {
+            lblBienvenida.Text = $"Bienvenido/a al area de {this.rolRecibido}";
 
+            if (this.rolRecibido == "Docente")
+            {
+                btnIngresar.UseAccentColor = false;
+            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

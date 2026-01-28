@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDocente));
             materialCard1 = new MaterialSkin.Controls.MaterialCard();
-            materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            lblBienvenida = new MaterialSkin.Controls.MaterialLabel();
             btnCancelar = new MaterialSkin.Controls.MaterialButton();
             btnIngresar = new MaterialSkin.Controls.MaterialButton();
             textBox2 = new TextBox();
@@ -46,7 +46,7 @@
             // 
             materialCard1.BackColor = Color.FromArgb(255, 255, 255);
             materialCard1.BackgroundImage = (Image)resources.GetObject("materialCard1.BackgroundImage");
-            materialCard1.Controls.Add(materialLabel4);
+            materialCard1.Controls.Add(lblBienvenida);
             materialCard1.Controls.Add(btnCancelar);
             materialCard1.Controls.Add(btnIngresar);
             materialCard1.Controls.Add(textBox2);
@@ -65,17 +65,16 @@
             materialCard1.Size = new Size(611, 246);
             materialCard1.TabIndex = 2;
             // 
-            // materialLabel4
+            // lblBienvenida
             // 
-            materialLabel4.AutoSize = true;
-            materialLabel4.Depth = 0;
-            materialLabel4.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
-            materialLabel4.Location = new Point(257, 223);
-            materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
-            materialLabel4.Name = "materialLabel4";
-            materialLabel4.Size = new Size(95, 19);
-            materialLabel4.TabIndex = 8;
-            materialLabel4.Text = "Bienvenido/a";
+            lblBienvenida.AutoSize = true;
+            lblBienvenida.Depth = 0;
+            lblBienvenida.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
+            lblBienvenida.Location = new Point(257, 223);
+            lblBienvenida.MouseState = MaterialSkin.MouseState.HOVER;
+            lblBienvenida.Name = "lblBienvenida";
+            lblBienvenida.Size = new Size(1, 0);
+            lblBienvenida.TabIndex = 8;
             // 
             // btnCancelar
             // 
@@ -212,6 +211,6 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialButton btnCancelar;
-        private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private MaterialSkin.Controls.MaterialLabel lblBienvenida;
     }
 }
