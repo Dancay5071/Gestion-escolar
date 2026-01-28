@@ -60,7 +60,6 @@
             materialCard1.Padding = new Padding(14);
             materialCard1.Size = new Size(707, 355);
             materialCard1.TabIndex = 0;
-            materialCard1.Paint += materialCard1_Paint;
             // 
             // btnEstudiante
             // 
@@ -81,7 +80,7 @@
             btnEstudiante.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnEstudiante.UseAccentColor = false;
             btnEstudiante.UseVisualStyleBackColor = true;
-            btnEstudiante.Click += materialButton4_Click;
+            btnEstudiante.Click += btnEstudiante_Click;
             // 
             // pictureBox1
             // 
@@ -113,6 +112,7 @@
             btnAuxiliar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnAuxiliar.UseAccentColor = false;
             btnAuxiliar.UseVisualStyleBackColor = true;
+            btnAuxiliar.Click += btnAuxiliar_Click;
             // 
             // btndocente
             // 
@@ -133,7 +133,7 @@
             btndocente.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btndocente.UseAccentColor = false;
             btndocente.UseVisualStyleBackColor = true;
-            btndocente.Click += materialButton2_Click_1;
+            btndocente.Click += btndocente_Click;
             // 
             // btnDirectivo
             // 
@@ -153,6 +153,7 @@
             btnDirectivo.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnDirectivo.UseAccentColor = false;
             btnDirectivo.UseVisualStyleBackColor = true;
+            btnDirectivo.Click += btnDirectivo_Click;
             // 
             // materialLabel2
             // 
@@ -166,7 +167,6 @@
             materialLabel2.Size = new Size(320, 19);
             materialLabel2.TabIndex = 2;
             materialLabel2.Text = "Seleccione el perfil con el que desea ingresar:";
-            materialLabel2.Click += materialLabel2_Click;
             // 
             // Titulo
             // 

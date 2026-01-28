@@ -22,74 +22,31 @@ namespace Gestión_escolar
             );
         }
 
-        private void materialListView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        
 
+        private void btnAuxiliar_Click(object sender, EventArgs e)
+        {
+            FormAuxiliar login = new FormAuxiliar("Auxiliar");
+            login.Show();
         }
 
-        private void materialButton3_Click(object sender, EventArgs e)
+        private void btnDirectivo_Click(object sender, EventArgs e)
         {
-
+            FormDirectivo login = new FormDirectivo("Directivo");
+            login.Show();
         }
 
-        private void materialButton2_Click(object sender, EventArgs e)
+        private void btndocente_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void materialButton3_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void materialTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void materialLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void materialButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void materialTextBox1_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void materialLabel1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void materialCard1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void materialButton2_Click_1(object sender, EventArgs e)
-        {
-            
             FormDocente login = new FormDocente("Docente");
             login.Show();
-        
-        }
-
-        private void materialLabel2_Click(object sender, EventArgs e)
-        {
 
         }
 
-        private void materialButton4_Click(object sender, EventArgs e)
+        private void btnEstudiante_Click(object sender, EventArgs e)
         {
             FormEstudiante login = new FormEstudiante("Estudiante");
             login.Show();
-          
         }
     }
 }

@@ -30,7 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDocente));
             materialCard1 = new MaterialSkin.Controls.MaterialCard();
-            materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            btnCancelar = new MaterialSkin.Controls.MaterialButton();
+            btnIngresar = new MaterialSkin.Controls.MaterialButton();
             textBox2 = new TextBox();
             textBox1 = new TextBox();
             materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
@@ -44,7 +46,9 @@
             // 
             materialCard1.BackColor = Color.FromArgb(255, 255, 255);
             materialCard1.BackgroundImage = (Image)resources.GetObject("materialCard1.BackgroundImage");
-            materialCard1.Controls.Add(materialButton1);
+            materialCard1.Controls.Add(materialLabel4);
+            materialCard1.Controls.Add(btnCancelar);
+            materialCard1.Controls.Add(btnIngresar);
             materialCard1.Controls.Add(textBox2);
             materialCard1.Controls.Add(textBox1);
             materialCard1.Controls.Add(materialTextBox1);
@@ -61,25 +65,58 @@
             materialCard1.Size = new Size(611, 246);
             materialCard1.TabIndex = 2;
             // 
-            // materialButton1
+            // materialLabel4
             // 
-            materialButton1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton1.Depth = 0;
-            materialButton1.HighEmphasis = true;
-            materialButton1.Icon = null;
-            materialButton1.Location = new Point(257, 177);
-            materialButton1.Margin = new Padding(4, 6, 4, 6);
-            materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            materialButton1.Name = "materialButton1";
-            materialButton1.NoAccentTextColor = Color.Empty;
-            materialButton1.Size = new Size(91, 36);
-            materialButton1.TabIndex = 6;
-            materialButton1.Text = "Ingresar";
-            materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton1.UseAccentColor = false;
-            materialButton1.UseVisualStyleBackColor = true;
-            materialButton1.Click += materialButton1_Click;
+            materialLabel4.AutoSize = true;
+            materialLabel4.Depth = 0;
+            materialLabel4.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
+            materialLabel4.Location = new Point(257, 223);
+            materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            materialLabel4.Name = "materialLabel4";
+            materialLabel4.Size = new Size(95, 19);
+            materialLabel4.TabIndex = 8;
+            materialLabel4.Text = "Bienvenido/a";
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnCancelar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnCancelar.Depth = 0;
+            btnCancelar.HighEmphasis = true;
+            btnCancelar.Icon = null;
+            btnCancelar.Location = new Point(167, 181);
+            btnCancelar.Margin = new Padding(4, 6, 4, 6);
+            btnCancelar.MouseState = MaterialSkin.MouseState.HOVER;
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.NoAccentTextColor = Color.Empty;
+            btnCancelar.Size = new Size(96, 36);
+            btnCancelar.TabIndex = 7;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnCancelar.UseAccentColor = false;
+            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
+            // 
+            // btnIngresar
+            // 
+            btnIngresar.AutoSize = false;
+            btnIngresar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnIngresar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnIngresar.Depth = 0;
+            btnIngresar.HighEmphasis = true;
+            btnIngresar.Icon = null;
+            btnIngresar.Location = new Point(338, 181);
+            btnIngresar.Margin = new Padding(4, 6, 4, 6);
+            btnIngresar.MouseState = MaterialSkin.MouseState.HOVER;
+            btnIngresar.Name = "btnIngresar";
+            btnIngresar.NoAccentTextColor = Color.Empty;
+            btnIngresar.Size = new Size(91, 36);
+            btnIngresar.TabIndex = 6;
+            btnIngresar.Text = "Ingresar";
+            btnIngresar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnIngresar.UseAccentColor = false;
+            btnIngresar.UseVisualStyleBackColor = true;
+            btnIngresar.Click += btnIngresar_Click;
             // 
             // textBox2
             // 
@@ -148,7 +185,6 @@
             materialLabel2.Size = new Size(90, 19);
             materialLabel2.TabIndex = 1;
             materialLabel2.Text = "Contraseña: ";
-            materialLabel2.Click += materialLabel2_Click;
             // 
             // FormDocente
             // 
@@ -169,11 +205,13 @@
         #endregion
         private MaterialSkin.Controls.MaterialCard materialCard1;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
+        private MaterialSkin.Controls.MaterialButton btnIngresar;
         private TextBox textBox2;
         private TextBox textBox1;
         private MaterialSkin.Controls.MaterialTextBox materialTextBox1;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private MaterialSkin.Controls.MaterialButton btnCancelar;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
     }
 }
