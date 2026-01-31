@@ -10,16 +10,6 @@ namespace Gestión_escolar
     {
         public string Legajo { get; set; }
     
-        public Docente(string nombre, string apellido, string dni, string email, string contraseña) 
-        {   
-            Nombre = nombre;
-            Apellido = apellido;
-            DNI = dni;
-            Email = email;
-            Contraseña = contraseña;                                                        
-        }
-
-        
-
+    
     }
 }

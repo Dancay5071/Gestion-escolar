@@ -54,7 +54,17 @@ namespace Gestión_escolar
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+            RepositorioUsuarios repo = new RepositorioUsuarios();
+            Persona user = repo.IntentarLogin(txtUsuario.Text, txtPass.Text, this.rolRecibido);
 
+            if (user != null)
+            {
+                MessageBox.Show("¡Bienvenido " + user.Nombre + "!");
+            }
+            else
+            {
+                MessageBox.Show("Datos incorrectos");
+            }
         }
     }
 }

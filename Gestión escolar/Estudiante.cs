@@ -8,13 +8,6 @@ namespace Gestión_escolar
     {
         public string Curso { get; set; }
         public string División { get; set; }
-        public Estudiante(string nombre, string apellido, string dni, string email, string contraseña)
-        {
-            Nombre = nombre;
-            Apellido = apellido;
-            DNI = dni;
-            Email = email;
-            Contraseña = contraseña;
-        }
+       
     }
 }

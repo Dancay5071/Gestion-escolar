@@ -1,6 +1,8 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using static Mysqlx.Crud.Order.Types;
 
 namespace Gestión_escolar
 {
@@ -13,4 +15,7 @@ namespace Gestión_escolar
         public string Contraseña { get; set; }
 
     }
+
 }
+    
+

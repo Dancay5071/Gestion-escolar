@@ -33,8 +33,8 @@
             lblBienvenida = new MaterialSkin.Controls.MaterialLabel();
             btnCancelar = new MaterialSkin.Controls.MaterialButton();
             btnIngresar = new MaterialSkin.Controls.MaterialButton();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            txtPass = new TextBox();
+            txtUsuario = new TextBox();
             materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
             materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
@@ -49,8 +49,8 @@
             materialCard1.Controls.Add(lblBienvenida);
             materialCard1.Controls.Add(btnCancelar);
             materialCard1.Controls.Add(btnIngresar);
-            materialCard1.Controls.Add(textBox2);
-            materialCard1.Controls.Add(textBox1);
+            materialCard1.Controls.Add(txtPass);
+            materialCard1.Controls.Add(txtUsuario);
             materialCard1.Controls.Add(materialTextBox1);
             materialCard1.Controls.Add(materialLabel3);
             materialCard1.Controls.Add(materialLabel1);
@@ -115,27 +115,27 @@
             btnIngresar.UseAccentColor = false;
             btnIngresar.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txtPass
             // 
-            textBox2.Location = new Point(286, 115);
-            textBox2.Name = "textBox2";
-            textBox2.PasswordChar = '*';
-            textBox2.Size = new Size(131, 23);
-            textBox2.TabIndex = 5;
+            txtPass.Location = new Point(286, 115);
+            txtPass.Name = "txtPass";
+            txtPass.PasswordChar = '*';
+            txtPass.Size = new Size(131, 23);
+            txtPass.TabIndex = 5;
             // 
-            // textBox1
+            // txtUsuario
             // 
-            textBox1.Location = new Point(286, 71);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(131, 23);
-            textBox1.TabIndex = 4;
+            txtUsuario.Location = new Point(286, 71);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(131, 23);
+            txtUsuario.TabIndex = 4;
             // 
             // materialTextBox1
             // 
             materialTextBox1.AnimateReadOnly = false;
             materialTextBox1.BorderStyle = BorderStyle.None;
             materialTextBox1.Depth = 0;
-            materialTextBox1.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            materialTextBox1.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             materialTextBox1.LeadingIcon = null;
             materialTextBox1.Location = new Point(309, 88);
             materialTextBox1.MaxLength = 50;
@@ -202,8 +202,8 @@
         private MaterialSkin.Controls.MaterialLabel lblBienvenida;
         private MaterialSkin.Controls.MaterialButton btnCancelar;
         private MaterialSkin.Controls.MaterialButton btnIngresar;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtPass;
+        private TextBox txtUsuario;
         private MaterialSkin.Controls.MaterialTextBox materialTextBox1;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
